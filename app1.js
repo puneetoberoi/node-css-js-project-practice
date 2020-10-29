@@ -54,7 +54,7 @@ app.use(express.json());
 
 app.get('/', (req, res)=>{
     // res.render('index', {title: "Nanak", message: "Waheguru"})
-    // res.sendFile(path.join(__dirname, 'public', 'home.html'))
+    // res.sendFile(path.join(__dirname, 'public', 'home.html')) for static assets
     res.send(createTemplate(articles.article)) //no home.html file needed and if more articles then there will be just one func and no files
 })
 
