@@ -6,11 +6,16 @@
     <title>{{title}}</title>
 </head>
 <body>
-    <a href="/">Home</a>
-    <h2>Your form has been submitted with the following data:</h2>
-    <h3>{{message.name}}</h3>
-    <h3>{{message.age}}</h3>
-    <h3>{{message.email}}</h3>
+    <div>
+        <a href="/">Home</a>
+    </div>
+    
+     {{#if data.name}}
+    <strong>Success</strong>
+    <p>Information saved for {{data.name}}</p>
+    {{/if}}
+    
+    {{message}}
 
 </body>
 </html>
